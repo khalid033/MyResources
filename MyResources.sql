@@ -81,3 +81,17 @@ INSERT INTO ressource ( RessourceId , SquadID , ProjetID , SubcategoryID)
 VALUES(3 , 3 , 3 , 3);
 INSERT INTO ressource ( RessourceId , SquadID , ProjetID , SubcategoryID)
 VALUES(4 , 4 , 4 , 4);
+ALTER TABLE subcategory 
+ADD subcategory_name VARCHAR (20);
+UPDATE subcategory
+SET subcategory_name = 'subcategory1' 
+WHERE SubcategoryID = 1;
+UPDATE subcategory
+SET subcategory_name = 'subcategory2' 
+WHERE SubcategoryID = 2;
+UPDATE subcategory
+SET subcategory_name = 'subcategory3' 
+WHERE SubcategoryID = 3;
+UPDATE subcategory
+SET subcategory_name = 'subcategory4' 
+WHERE SubcategoryID = 4;
